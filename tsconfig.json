@@ -14,7 +14,17 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "customized-btn": [
+        "dist/customized-btn/customized-btn",
+        "dist/customized-btn"
+      ],
+      "btn-style": [
+        "dist/btn-style/btn-style",
+        "dist/btn-style"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

@@ -1,0 +1,28 @@
+{
+  "name": "btn-style",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^9.0.7",
+    "@angular/core": "^9.0.7",
+    "tslib": "^1.10.0"
+  },
+  "description": "This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.",
+  "main": "karma.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielperezp/biography.git"
+  },
+  "keywords": [
+    "library",
+    "button"
+  ],
+  "author": "Daniel Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielperezp/biography/issues"
+  },
+  "homepage": "https://github.com/danielperezp/biography#readme"
+}

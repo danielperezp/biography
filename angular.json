@@ -123,6 +123,87 @@
           }
         }
       }
-    }},
+    },
+    "customized-btn": {
+      "projectType": "library",
+      "root": "projects/customized-btn",
+      "sourceRoot": "projects/customized-btn/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/customized-btn/tsconfig.lib.json",
+            "project": "projects/customized-btn/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/customized-btn/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/customized-btn/src/test.ts",
+            "tsConfig": "projects/customized-btn/tsconfig.spec.json",
+            "karmaConfig": "projects/customized-btn/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/customized-btn/tsconfig.lib.json",
+              "projects/customized-btn/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "btn-style": {
+      "projectType": "library",
+      "root": "projects/btn-style",
+      "sourceRoot": "projects/btn-style/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/btn-style/tsconfig.lib.json",
+            "project": "projects/btn-style/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/btn-style/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/btn-style/src/test.ts",
+            "tsConfig": "projects/btn-style/tsconfig.spec.json",
+            "karmaConfig": "projects/btn-style/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/btn-style/tsconfig.lib.json",
+              "projects/btn-style/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "bio"
 }
